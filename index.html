@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>何回太郎朝尊</title>
+</head>
+<body>
+    <h1>何回太郎朝尊</h1>
+    <p>これは文久土佐藩での南海太郎朝尊、肥前忠広のドロップ数やボスの撃破数を記録するだけのアプリです。</p>
+    <div class="count_area">
+        <div class="nankai_div">
+            <!--南海先生カウント-->
+            <p>南海太郎朝尊ドロップ数</p>
+            <input id="n_cnt10Down" class="button nankai" type="button" value="－10" />
+            <input id="n_cntDown" class="button nankai" type="button" value="－" />
+            <p id="n_cnt" class="cnt nankai" readonly>0</p>
+            <input id="n_cntUp" class="button nankai" type="button" value="＋" />
+            <input id="n_cnt10Up" class="button nankai" type="button" value="＋10" />
+            <p class="nankai">回太郎朝尊</p>
+        </div>
+        <div class="city_div">
+            <!--高知城下町ボス撃破数-->
+            <p>高知城下町ボス撃破数</p>
+            <input id="city_cnt10Down" class="button city" type="button" value="－10" />
+            <input id="city_cntDown" class="button city" type="button" value="－" />
+            <p input id="city_cnt" class="cnt city" readonly>0</p>
+            <input id="city_cntUp" class="button city" type="button" value="＋" />
+            <input id="city_cnt10Up" class="button city" type="button" value="＋10" />
+            <p class="city">回</p>
+        </div>
+        <div class="hizen_div">
+            <!--肥前くんカウント-->
+            <p>肥前忠広ドロップ数</p>
+            <input id="h_cnt10Down" class="button hizen" type="button" value="－10" />
+            <input id="h_cntDown" class="button hizen" type="button" value="－" />
+            <p input id="h_cnt" class="cnt hizen" readonly>0</p>
+            <input id="h_cntUp" class="button hizen" type="button" value="＋" />
+            <input id="h_cnt10Up" class="button hizen" type="button" value="＋10" />
+            <p class="hizen">回</p>
+        </div>
+        <div class="boss_div">
+            <!--高知城最終ボス撃破数-->
+            <p>高知城最終ボス撃破数</p>
+            <input id="boss_cnt10Down" class="button boss" type="button" value="－10" />
+            <input id="boss_cntDown" class="button boss" type="button" value="－" />
+            <p input id="boss_cnt" class="cnt boss" readonly>0</p>
+            <input id="boss_cntUp" class="button boss" type="button" value="＋" />
+            <input id="boss_cnt10Up" class="button boss" type="button" value="＋10" />
+            <p class="boss">回</p>
+        </div>
+    </div>
+    <div class="drop_area">
+        <!--ドロップ率計算-->
+        <div class="drop_anlysis_div">
+            <p>南海太郎朝尊ドロップ率(南海太郎朝尊ドロップ数/高知城下町ボス撃破数)</p>
+            <p id="nankai_drop" class="n_drop" readonly>0</p>
+            <p class="n_drop">%</p>
+        </div>
+        <div class="drop_anlysis_div">
+            <p>肥前忠広ドロップ率(肥前忠広ドロップ数/高知城ボス撃破数)</p>
+            <p id="hizen_drop" class="h_drop" readonly>0</p>
+            <p class="h_drop">%</p>
+        </div>
+        
+    </div>
+    <footer>
+        <p>これは個人の趣味で作られたものであり、公式と一切何の関係もありません</p>
+        <p>バグなどの報告は以下のメールアドレスにお願いします（☆を@に変えてください）</p>
+        <p>連絡先：masia051162☆gmail.com</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
