@@ -1,0 +1,55 @@
+@charset "UTF-8";
+h1 {
+    background-color: #1c315d;
+    color: white;
+    padding: 10px;
+}
+body {
+    margin: 10px 20px;
+}
+.cnt { /*カウントテキストエリアの設定*/
+    width: 40px;
+    padding: 0.7em;
+    font-size: 12pt;
+    text-align: center;
+}
+.button { /*ボタンの大きさ*/
+    width: 45px;
+    padding: 10px;
+    font-size: 10pt;
+    text-align: center;
+}
+.nankai,.hizen,.city,.boss,.n_drop,.h_drop{/*ボタン等を横並びに*/
+    display: inline-block;
+}
+.nankai_div, .hizen_div, .city_div, .boss_div{ /*カウントdivの大きさ*/
+    width: 400px;
+    height: 100px;
+    margin: 20px 10px;
+}
+.count_area { /*全体カウントdivの配置設定*/
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 10px;
+    border-bottom: dotted 3px;
+    border-top: dotted 3px;
+}
+
+.drop_area { /*ドロップ率divの配置設定*/
+    display: flex;
+    flex-direction: column;
+}
+
+#nankai_drop, #hizen_drop { /*ドロップ率テキストエリア*/
+    width: 40px;
+    padding: 0.7em;
+    font-size: 10pt;
+    text-align: center;
+}
+footer{/*フッターの設定*/
+    background-color: #1c315d;
+    padding: 10px;
+}
+footer p{
+    color: white;
+}
